@@ -41,7 +41,7 @@ echo "Found $(lsb_release -d | awk -F: '{print $2}') OS installed on this system
 dpkg --list > ${logdir}/pkgs_found_before.log 2>&1
 
 #Install all necessary packages for compiling qsdk code
-apt-get -y install ocaml-findlib ocaml-base-nox ocaml-base libfindlib-ocaml-dev autoconf automake ccache cgroupfs-mount gcc g++ binutils patch bzip2 flex make gettext pkg-config unzip zlib1g-dev libc6-dev subversion libncurses5-dev gawk sharutils curl libxml-parser-perl python-yaml ocaml-nox ocaml libssl-dev libfdt-dev device-tree-compiler u-boot-tools parallel freetds-dev ocaml-native-compilers libpcre-ocaml libpcre-ocaml-dev libpycaml-ocaml-dev coccinelle
+apt-get -y install ocaml-findlib ocaml-base-nox ocaml-base libfindlib-ocaml-dev autoconf automake ccache cgroupfs-mount gcc g++ binutils patch bzip2 flex make gettext pkg-config unzip zlib1g-dev libc6-dev subversion libncurses5-dev gawk sharutils curl libxml-parser-perl python-yaml ocaml-nox ocaml libssl-dev libfdt-dev device-tree-compiler u-boot-tools parallel freetds-dev ocaml-native-compilers libpcre-ocaml libpcre-ocaml-dev libpycaml-ocaml-dev coccinelle lzop cproto
 
 #for ubuntu-18, libssl1.0-dev needs to be installed
 apt-get -y install libssl1.0-dev
